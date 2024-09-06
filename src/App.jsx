@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { ChakraProvider, useToast } from "@chakra-ui/react";
 import { Heading } from "@chakra-ui/react"
-import { Text, Container, VStack, Box } from '@chakra-ui/react'
+import { Text, Container, VStack, Box, SimpleGrid, Button } from '@chakra-ui/react'
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import './App.css'
 
@@ -18,11 +18,48 @@ function App() {
         backgroundRepeat="no-repeat"
       >
         <Text color="white" fontSize="2xl" p={4}>
-          Welcome to the App
         </Text>
         <VStack mt='24px'>
-          <Heading>Philadelphia</Heading>
-          <Text fontSize='8xl' padding='1' mt='-10'>61°</Text>
+          <Heading fontSize='xl' fontWeight='normal' color='white' fontFamily='Playfair Display, sans-serif'>PHILADELPHIA</Heading>
+          <Text fontWeight='hairline' fontSize='8xl' color='white' mt='-8'>61°</Text>
+          <Text fontWeight='normal' fontSize='xl' color='white' mt='-8'>L: 58° H: 64°</Text>
+          
+          <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(100px, 1fr))'>
+            <Card>
+              <CardHeader>
+                <Heading size='sm'> Customer dashboard</Heading>
+              </CardHeader>
+              <CardBody>
+                <Text>View a summary of all your customers over the last month.</Text>
+              </CardBody>
+              <CardFooter>
+                <Button>View here</Button>
+              </CardFooter>
+            </Card>
+            <Card>
+              <CardHeader>
+                <Heading size='sm'> Customer dashboard</Heading>
+              </CardHeader>
+              <CardBody>
+                <Text>View a summary of all your customers over the last month.</Text>
+              </CardBody>
+              <CardFooter>
+                <Button>View here</Button>
+              </CardFooter>
+            </Card>
+            <Card>
+              <CardHeader>
+                <Heading size='sm'> Customer dashboard</Heading>
+              </CardHeader>
+              <CardBody>
+                <Text>View a summary of all your customers over the last month.</Text>
+              </CardBody>
+              <CardFooter>
+                <Button>View here</Button>
+              </CardFooter>
+            </Card>
+          </SimpleGrid>
+          
           <Container maxW='md' bg='blue.600' color='white' centerContent>
             "md" Container
           </Container>

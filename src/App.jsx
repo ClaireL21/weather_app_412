@@ -30,6 +30,33 @@ function App() {
 
           <Container mt='10px' as='section' maxWidth='4xl' justify='center'>
             <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif' width='full'>
+              Hourly Forecast
+            </Heading>
+          </Container>
+          <VStack>
+            <Box px={4} width='400px' height='200px'> {/* Add padding here */}
+              <HStack margin='2px' spacing={1} overflowX="auto">
+                <Card margin='2px' width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                  <Flex justifyContent='center'>
+                    <CardHeader>
+                      <Heading size='md'>6 pm</Heading>
+                    </CardHeader>
+                  </Flex>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>60°</Text>
+                    </Flex>
+                    </CardBody>
+                </Card>
+              </HStack>
+            </Box>
+          </VStack>
+
+          <Container mt='10px' as='section' maxWidth='4xl' justify='center'>
+            <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif' width='full'>
               10-Day Forecast
             </Heading>
           </Container>

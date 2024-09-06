@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { ChakraProvider, useToast } from "@chakra-ui/react";
 import { Heading, Image } from "@chakra-ui/react"
-import { Tag, TagLabel, HStack, FormControl, Flex } from '@chakra-ui/react'
+import { Tag, TagLabel, HStack, FormControl, Flex, Stack } from '@chakra-ui/react'
 import { Text, Container, VStack, Box, SimpleGrid, Button } from '@chakra-ui/react'
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import './App.css'
@@ -27,6 +27,11 @@ function App() {
           <Text fontWeight='normal' fontSize='xl' color='white' mt='-8'>
             L: 58° H: 64°
           </Text>
+
+          {/* <VStack overflowX="auto">
+            
+          </VStack> */}
+
 
           <Container mt='10px' as='section' maxWidth='4xl' justify='center'>
             <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif' width='full'>
@@ -55,7 +60,7 @@ function App() {
             </Box>
           </VStack>
 
-          <Container mt='10px' as='section' maxWidth='4xl' justify='center'>
+          <Container mt='-20px' as='section' maxWidth='4xl' justify='center'>
             <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif' width='full'>
               10-Day Forecast
             </Heading>
@@ -177,6 +182,36 @@ function App() {
             </Box>
           </VStack>
 
+          <Container mt='-20px' as='section' maxWidth='4xl' justify='center'>
+            <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif' width='full'>
+              Wind
+            </Heading>
+          </Container>
+          <Box px={4} width='400px' height='200px'>
+            <Card
+              direction={{ base: 'column', sm: 'row' }}
+              overflow='hidden'
+              variant='outline'
+            >
+              <Image
+                objectFit='cover'
+                maxW={{ base: '100%', sm: '200px' }}
+                src='/images/Wind_map.jpg'
+                alt='Wind map'
+              />
+              <Stack>
+                <CardBody>
+                  <Heading size='md'>The perfect latte</Heading>
+
+                  <Text py='2'>
+                    Caffè latte is a coffee beverage of Italian origin made with espresso
+                    and steamed milk.
+                  </Text>
+                </CardBody>
+              </Stack>
+            </Card>
+          </Box>
+          
 {/* 
           <Box px={4}>
             <VStack>

@@ -50,207 +50,390 @@ function App() {
             L: 58° H: 64°
           </Text>
 
+          {/* Hourly Forecast */}
           <Container mt='10px' as='section' maxWidth='4xl' justify='center'>
             <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif' width='full'>
               Hourly Forecast
             </Heading>
           </Container>
 
-          <Box
-            width="full"  // Full width of the container
-            overflowX="auto"  // Enable horizontal scrolling
-            height="140px"
-            py={4}  // Add some padding on the top and bottom
-          >
-            <HStack
-              spacing={4}  // Space between each card
-              px={2}  // Padding inside the HStack
+          {/* Hourly Forecast Horizontal Scroll */}
+          <Container mt='10px' height='140px' as='section' maxWidth='4xl' justify='center'>
+            <Box
+              width="full"  // Full width of the container
+              overflowX="auto"  // Enable horizontal scrolling
+              height="140px"
+              mb={4}
             >
-              {/* Example Card */}
-              <Card margin='2px' width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
-                <Flex justifyContent='center'>
-                  <CardHeader>
-                    <Heading size='md'>6 pm</Heading>
-                  </CardHeader>
-                </Flex>
-                <CardBody mt='-30px'>
+              <HStack
+                spacing={4}  // Space between each card
+                px={2}  // Padding inside the HStack
+                minWidth="max-content"
+              >
+                {/* Example Card */}
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
                   <Flex justifyContent='center'>
-                    <Image src='/images/sun_icon.png' width='50px'></Image>
+                    <CardHeader>
+                      <Heading size='md'>6 pm</Heading>
+                    </CardHeader>
                   </Flex>
-                  <Flex justifyContent='center'>
-                    <Text>60°</Text>
-                  </Flex>
-                </CardBody>
-              </Card>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>60°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
 
-              {/* Repeat similar cards */}
-              <Card margin='2px' width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
-                <Flex justifyContent='center'>
-                  <CardHeader>
-                    <Heading size='md'>7 pm</Heading>
-                  </CardHeader>
-                </Flex>
-                <CardBody mt='-30px'>
+                {/* Repeat similar cards */}
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
                   <Flex justifyContent='center'>
-                    <Image src='/images/sun_icon.png' width='50px'></Image>
+                    <CardHeader>
+                      <Heading size='md'>7 pm</Heading>
+                    </CardHeader>
                   </Flex>
-                  <Flex justifyContent='center'>
-                    <Text>59°</Text>
-                  </Flex>
-                </CardBody>
-              </Card>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>59°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
 
-              <Card margin='2px' width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
-                <Flex justifyContent='center'>
-                  <CardHeader>
-                    <Heading size='md'>8 pm</Heading>
-                  </CardHeader>
-                </Flex>
-                <CardBody mt='-30px'>
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
                   <Flex justifyContent='center'>
-                    <Image src='/images/sun_icon.png' width='50px'></Image>
+                    <CardHeader>
+                      <Heading size='md'>8 pm</Heading>
+                    </CardHeader>
                   </Flex>
-                  <Flex justifyContent='center'>
-                    <Text>58°</Text>
-                  </Flex>
-                </CardBody>
-              </Card>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>58°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
 
-              <Card margin='2px' width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
-                <Flex justifyContent='center'>
-                  <CardHeader>
-                    <Heading size='md'>8 pm</Heading>
-                  </CardHeader>
-                </Flex>
-                <CardBody mt='-30px'>
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
                   <Flex justifyContent='center'>
-                    <Image src='/images/sun_icon.png' width='50px'></Image>
+                    <CardHeader>
+                      <Heading size='md'>8 pm</Heading>
+                    </CardHeader>
                   </Flex>
-                  <Flex justifyContent='center'>
-                    <Text>58°</Text>
-                  </Flex>
-                </CardBody>
-              </Card>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>58°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
 
-              <Card margin='2px' width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
-                <Flex justifyContent='center'>
-                  <CardHeader>
-                    <Heading size='md'>8 pm</Heading>
-                  </CardHeader>
-                </Flex>
-                <CardBody mt='-30px'>
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
                   <Flex justifyContent='center'>
-                    <Image src='/images/sun_icon.png' width='50px'></Image>
+                    <CardHeader>
+                      <Heading size='md'>8 pm</Heading>
+                    </CardHeader>
                   </Flex>
-                  <Flex justifyContent='center'>
-                    <Text>58°</Text>
-                  </Flex>
-                </CardBody>
-              </Card>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>58°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
+              </HStack>
+            </Box>
+          </Container>
+          
+          {/* 10 Day  Forecast */}
+          <Container mt='10px' as='section' maxWidth='4xl' justify='center'>
+            <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif' width='full'>
+              10 Day Forecast
+            </Heading>
+          </Container>
 
-              {/* Add more cards as needed */}
-            </HStack>
-          </Box>
+          {/* 10 Day Forecast Horizontal Scroll */}
+          <Container mt='10px' height='140px' as='section' maxWidth='4xl' justify='center'>
+            <Box
+              width="full"  // Full width of the container
+              overflowX="auto"  // Enable horizontal scrolling
+              height="140px"
+            >
+              <HStack
+                spacing={4}  // Space between each card
+                px={2}  // Padding inside the HStack
+              >
+                {/* Example Card */}
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                  <Flex justifyContent='center'>
+                    <CardHeader>
+                      <Heading size='md'>6 pm</Heading>
+                    </CardHeader>
+                  </Flex>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>60°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
+
+                {/* Repeat similar cards */}
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                  <Flex justifyContent='center'>
+                    <CardHeader>
+                      <Heading size='md'>7 pm</Heading>
+                    </CardHeader>
+                  </Flex>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>59°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
+
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                  <Flex justifyContent='center'>
+                    <CardHeader>
+                      <Heading size='md'>8 pm</Heading>
+                    </CardHeader>
+                  </Flex>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>58°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
+
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                  <Flex justifyContent='center'>
+                    <CardHeader>
+                      <Heading size='md'>8 pm</Heading>
+                    </CardHeader>
+                  </Flex>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>58°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
+
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                  <Flex justifyContent='center'>
+                    <CardHeader>
+                      <Heading size='md'>8 pm</Heading>
+                    </CardHeader>
+                  </Flex>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>58°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
+              </HStack>
+            </Box>
+          </Container>
+
+
+          {/* Hourly Forecast */}
+          <Container mt='10px' as='section' maxWidth='4xl' justify='center'>
+            <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif' width='full'>
+              Hourly Forecast
+            </Heading>
+          </Container>
+
+          {/* Hourly Forecast Horizontal Scroll */}
+          <Container mt='10px' height='140px' as='section' maxWidth='4xl' justify='center'>
+            <Box
+              width="full"  // Full width of the container
+              overflowX="auto"  // Enable horizontal scrolling
+              height="140px"
+              mb={4}
+            >
+              <HStack
+                spacing={4}  // Space between each card
+                px={2}  // Padding inside the HStack
+                minWidth="max-content"
+              >
+                {/* Example Card */}
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                  <Flex justifyContent='center'>
+                    <CardHeader>
+                      <Heading size='md'>6 pm</Heading>
+                    </CardHeader>
+                  </Flex>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>60°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
+
+                {/* Repeat similar cards */}
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                  <Flex justifyContent='center'>
+                    <CardHeader>
+                      <Heading size='md'>7 pm</Heading>
+                    </CardHeader>
+                  </Flex>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>59°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
+
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                  <Flex justifyContent='center'>
+                    <CardHeader>
+                      <Heading size='md'>8 pm</Heading>
+                    </CardHeader>
+                  </Flex>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>58°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
+
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                  <Flex justifyContent='center'>
+                    <CardHeader>
+                      <Heading size='md'>8 pm</Heading>
+                    </CardHeader>
+                  </Flex>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>58°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
+
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                  <Flex justifyContent='center'>
+                    <CardHeader>
+                      <Heading size='md'>8 pm</Heading>
+                    </CardHeader>
+                  </Flex>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>58°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
+              </HStack>
+            </Box>
+          </Container>
+
+          <Container as='section' maxWidth='4xl' justify='center'>
+            <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif' width='full'>
+              Wind
+            </Heading>
+          </Container>
+
+          <Container mb='40px' as='section' maxWidth='4xl' justify='center'>
+            <Box px={4} width='330px' height='200px'>
+              <Card
+                direction={{ base: 'column', sm: 'row' }}
+                overflow='hidden'
+                variant='outline'
+              >
+                <Image
+                  objectFit='cover'
+                  maxW= '100px'
+                  src='/images/Wind_map.jpg'
+                  alt='Wind map'
+                />
+                <Stack>
+                  <CardBody>
+                    <Heading size='md'>The perfect latte</Heading>
+
+                    <Text py='2'>
+                      Caffè latte is a coffee beverage of Italian origin made with espresso
+                      and steamed milk.
+                    </Text>
+                  </CardBody>
+                </Stack>
+              </Card>
+            </Box>
+          </Container>
+
+          <Container as='section' maxWidth='4xl' justify='center'>
+            <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif' width='full'>
+              UV Index
+            </Heading>
+          </Container>
+
+          <Container mb='100px' as='section' maxWidth='4xl' justify='center'>
+            <Box px={4} width='330px' height='200px'>
+              <Card
+                direction={{ base: 'column', sm: 'row' }}
+                overflow='hidden'
+                variant='outline'
+              >
+                <Image
+                  objectFit='cover'
+                  maxW= '100px'
+                  src='/images/Wind_map.jpg'
+                  alt='Wind map'
+                />
+                <Stack>
+                  <CardBody>
+                    <Heading size='md'>The perfect latte</Heading>
+
+                    <Text py='2'>
+                      Caffè latte is a coffee beverage of Italian origin made with espresso
+                      and steamed milk.
+                    </Text>
+                  </CardBody>
+                </Stack>
+              </Card>
+            </Box>
+          </Container>
+
         </VStack>
-        
       </Box>
     </Flex>
 
-    <Box
-            width="full"  // Full width of the container
-            overflowX="auto"  // Enable horizontal scrolling
-            height="500px"
-            py={4}  // Add some padding on the top and bottom
-          >
-            <HStack
-              spacing={4}  // Space between each card
-              px={2}  // Padding inside the HStack
-            >
-              {/* Example Card */}
-              <Card margin='2px' width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
-                <Flex justifyContent='center'>
-                  <CardHeader>
-                    <Heading size='md'>6 pm</Heading>
-                  </CardHeader>
-                </Flex>
-                <CardBody mt='-30px'>
-                  <Flex justifyContent='center'>
-                    <Image src='/images/sun_icon.png' width='50px'></Image>
-                  </Flex>
-                  <Flex justifyContent='center'>
-                    <Text>60°</Text>
-                  </Flex>
-                </CardBody>
-              </Card>
-
-              {/* Repeat similar cards */}
-              <Card margin='2px' width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
-                <Flex justifyContent='center'>
-                  <CardHeader>
-                    <Heading size='md'>7 pm</Heading>
-                  </CardHeader>
-                </Flex>
-                <CardBody mt='-30px'>
-                  <Flex justifyContent='center'>
-                    <Image src='/images/sun_icon.png' width='50px'></Image>
-                  </Flex>
-                  <Flex justifyContent='center'>
-                    <Text>59°</Text>
-                  </Flex>
-                </CardBody>
-              </Card>
-
-              <Card margin='2px' width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
-                <Flex justifyContent='center'>
-                  <CardHeader>
-                    <Heading size='md'>8 pm</Heading>
-                  </CardHeader>
-                </Flex>
-                <CardBody mt='-30px'>
-                  <Flex justifyContent='center'>
-                    <Image src='/images/sun_icon.png' width='50px'></Image>
-                  </Flex>
-                  <Flex justifyContent='center'>
-                    <Text>58°</Text>
-                  </Flex>
-                </CardBody>
-              </Card>
-
-              <Card margin='2px' width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
-                <Flex justifyContent='center'>
-                  <CardHeader>
-                    <Heading size='md'>8 pm</Heading>
-                  </CardHeader>
-                </Flex>
-                <CardBody mt='-30px'>
-                  <Flex justifyContent='center'>
-                    <Image src='/images/sun_icon.png' width='50px'></Image>
-                  </Flex>
-                  <Flex justifyContent='center'>
-                    <Text>58°</Text>
-                  </Flex>
-                </CardBody>
-              </Card>
-
-              <Card margin='2px' width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
-                <Flex justifyContent='center'>
-                  <CardHeader>
-                    <Heading size='md'>8 pm</Heading>
-                  </CardHeader>
-                </Flex>
-                <CardBody mt='-30px'>
-                  <Flex justifyContent='center'>
-                    <Image src='/images/sun_icon.png' width='50px'></Image>
-                  </Flex>
-                  <Flex justifyContent='center'>
-                    <Text>58°</Text>
-                  </Flex>
-                </CardBody>
-              </Card>
-
-              {/* Add more cards as needed */}
-            </HStack>
-          </Box>
     
 
     {/* actual code */}

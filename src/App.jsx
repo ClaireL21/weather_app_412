@@ -4,6 +4,11 @@ import { Heading, Image } from "@chakra-ui/react"
 import { Tag, TagLabel, HStack, FormControl, Flex, Stack } from '@chakra-ui/react'
 import { Text, Container, VStack, Box, SimpleGrid, Button } from '@chakra-ui/react'
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
+import { Icon } from '@chakra-ui/react'
+import { TimeIcon, CalendarIcon } from '@chakra-ui/icons'
+import { FaWind } from "react-icons/fa";
+import { BsStars } from "react-icons/bs";
+
 import './App.css'
 
 function App() {
@@ -52,9 +57,12 @@ function App() {
 
           {/* Hourly Forecast */}
           <Container mt='10px' as='section' maxWidth='4xl' justify='center'>
-            <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif' width='full'>
-              Hourly Forecast
-            </Heading>
+            <HStack spacing={2} alignItems="center">
+              <TimeIcon w={5} h={5} color='white' />
+              <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif'>
+                Hourly Forecast
+              </Heading>
+            </HStack>
           </Container>
 
           {/* Hourly Forecast Horizontal Scroll */}
@@ -157,9 +165,12 @@ function App() {
           
           {/* 10 Day  Forecast */}
           <Container mt='10px' as='section' maxWidth='4xl' justify='center'>
-            <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif' width='full'>
-              10 Day Forecast
-            </Heading>
+            <HStack spacing={2} alignItems="center">
+              <CalendarIcon w={5} h={5} color='white' />
+              <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif'>
+                10 Day Forecast
+              </Heading>
+            </HStack>
           </Container>
 
           {/* 10 Day Forecast Horizontal Scroll */}
@@ -287,14 +298,17 @@ function App() {
             </Box>
           </Container>
 
-          <Container as='section' maxWidth='4xl' justify='center'>
-            <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif' width='full'>
-              Wind
-            </Heading>
+          <Container mt='10px' as='section' maxWidth='4xl' justify='center'>
+            <HStack spacing={2} alignItems="center">
+              <Icon as={FaWind} w={5} h={5} color='white' />
+              <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif'>
+                Wind
+              </Heading>
+            </HStack>
           </Container>
 
           <Container mb='40px' as='section' maxWidth='4xl' justify='center'>
-            <Box px={4} width='330px' height='200px'>
+            <Box px={4} width='330px' height='150px'>
               <Card
                 direction={{ base: 'column', sm: 'row' }}
                 overflow='hidden'
@@ -308,11 +322,10 @@ function App() {
                 />
                 <Stack>
                   <CardBody>
-                    <Heading size='md'>The perfect latte</Heading>
+                    <Heading size='md'>8 MPH</Heading>
 
                     <Text py='2'>
-                      Caffè latte is a coffee beverage of Italian origin made with espresso
-                      and steamed milk.
+                      Wind is blowing NorthWest 8 MPH, with 19 MPH gusts.
                     </Text>
                   </CardBody>
                 </Stack>
@@ -320,14 +333,17 @@ function App() {
             </Box>
           </Container>
 
-          <Container as='section' maxWidth='4xl' justify='center'>
-            <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif' width='full'>
-              UV Index
-            </Heading>
+          <Container mt='10px' as='section' maxWidth='4xl' justify='center'>
+            <HStack spacing={2} alignItems="center">
+              <Icon as={BsStars} w={5} h={5} color='white' />
+              <Heading color='white' fontWeight='normal' fontSize='xl' fontFamily='Playfair Display, sans-serif'>
+                Air Quality
+              </Heading>
+            </HStack>
           </Container>
 
           <Container mb='100px' as='section' maxWidth='4xl' justify='center'>
-            <Box px={4} width='330px' height='200px'>
+            <Box px={4} width='330px' height='150px'>
               <Card
                 direction={{ base: 'column', sm: 'row' }}
                 overflow='hidden'
@@ -336,16 +352,15 @@ function App() {
                 <Image
                   objectFit='cover'
                   maxW= '100px'
-                  src='/images/Wind_map.jpg'
+                  src='/images/uv_index.jpg'
                   alt='Wind map'
                 />
                 <Stack>
                   <CardBody>
-                    <Heading size='md'>The perfect latte</Heading>
+                    <Heading size='md'>15 Good</Heading>
 
                     <Text py='2'>
-                      Caffè latte is a coffee beverage of Italian origin made with espresso
-                      and steamed milk.
+                      The air quality index is 15 right now, similar to yesterday's air quality at this time 
                     </Text>
                   </CardBody>
                 </Stack>

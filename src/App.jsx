@@ -8,6 +8,7 @@ import { Icon } from '@chakra-ui/react'
 import { TimeIcon, CalendarIcon } from '@chakra-ui/icons'
 import { FaWind, FaCloud } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
+import { MdNightlight } from "react-icons/md";
 
 import './App.css'
 
@@ -91,10 +92,10 @@ function App() {
                 minWidth="max-content"
               >
                 {/* Example Card */}
-                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
                   <Flex justifyContent='center'>
                     <CardHeader>
-                      <Heading size='sm'>6 pm</Heading>
+                      <Heading color="white" size='sm'>6 pm</Heading>
                     </CardHeader>
                   </Flex>
                   <CardBody mt='-30px'>
@@ -102,16 +103,15 @@ function App() {
                       <Image src='/images/sun_icon.png' width='50px'></Image>
                     </Flex>
                     <Flex justifyContent='center'>
-                      <Text>60°</Text>
+                      <Text color="white">60°</Text>
                     </Flex>
                   </CardBody>
                 </Card>
 
-                {/* Repeat similar cards */}
-                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
                   <Flex justifyContent='center'>
                     <CardHeader>
-                      <Heading size='sm'>7 pm</Heading>
+                      <Heading color='white' size='sm'>7 pm</Heading>
                     </CardHeader>
                   </Flex>
                   <CardBody mt='-30px'>
@@ -119,85 +119,85 @@ function App() {
                       <Image src='/images/sun_icon.png' width='50px'></Image>
                     </Flex>
                     <Flex justifyContent='center'>
-                      <Text>59°</Text>
+                      <Text color='white'>59°</Text>
                     </Flex>
                   </CardBody>
                 </Card>
 
-                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
                   <Flex justifyContent='center'>
                     <CardHeader>
-                      <Heading size='sm'>8 pm</Heading>
+                      <Heading color='white' size='sm'>8 pm</Heading>
                     </CardHeader>
                   </Flex>
                   <CardBody mt='-30px'>
                     <Flex justifyContent='center'>
-                      <Image src='/images/white_cloud_img.png' width='50px'></Image>
+                      <Icon as={FaCloud} w={50} h={50} color='white'/>
                     </Flex>
                     <Flex justifyContent='center'>
-                      <Text>58°</Text>
+                      <Text color='white'>58°</Text>
                     </Flex>
                   </CardBody>
                 </Card>
 
-                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
                   <Flex justifyContent='center'>
                     <CardHeader>
-                      <Heading size='sm'>9 pm</Heading>
+                      <Heading color='white' size='sm'>9 pm</Heading>
                     </CardHeader>
                   </Flex>
                   <CardBody mt='-30px'>
                     <Flex justifyContent='center'>
-                      <Image src='/images/white_cloud_img.png' width='50px'></Image>
+                      <Icon as={FaCloud} w={50} h={50} color='white'/>
                     </Flex>
                     <Flex justifyContent='center'>
-                      <Text>55°</Text>
+                      <Text color='white'>55°</Text>
                     </Flex>
                   </CardBody>
                 </Card>
 
-                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
                   <Flex justifyContent='center'>
                     <CardHeader>
-                      <Heading size='sm'>10 pm</Heading>
+                      <Heading color='white' size='sm'>10 pm</Heading>
                     </CardHeader>
                   </Flex>
                   <CardBody mt='-30px'>
                     <Flex justifyContent='center'>
-                      <Image src='/images/white_cloud_img.png' width='50px'></Image>
+                      <Icon as={MdNightlight} w={50} h={50} color='white'/>
                     </Flex>
                     <Flex justifyContent='center'>
-                      <Text>53°</Text>
+                      <Text color='white'>53°</Text>
                     </Flex>
                   </CardBody>
                 </Card>
-                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
                   <Flex justifyContent='center'>
                     <CardHeader>
-                      <Heading size='sm'>11 pm</Heading>
+                      <Heading color='white' size='sm'>11 pm</Heading>
                     </CardHeader>
                   </Flex>
                   <CardBody mt='-30px'>
                     <Flex justifyContent='center'>
-                      <Image src='/images/white_cloud_img.png' width='50px'></Image>
+                      <Icon as={MdNightlight} w={50} h={50} color='white'/>
                     </Flex>
                     <Flex justifyContent='center'>
-                      <Text>55°</Text>
+                      <Text color='white'>55°</Text>
                     </Flex>
                   </CardBody>
                 </Card>
-                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
                   <Flex justifyContent='center'>
                     <CardHeader>
-                      <Heading size='sm'>12 am</Heading>
+                      <Heading color='white' size='sm'>12 am</Heading>
                     </CardHeader>
                   </Flex>
                   <CardBody mt='-30px'>
                     <Flex justifyContent='center'>
-                      <Image src='/images/white_cloud_img.png' width='50px'></Image>
+                      <Icon as={MdNightlight} w={50} h={50} color='white'/>
                     </Flex>
                     <Flex justifyContent='center'>
-                      <Text>55°</Text>
+                      <Text color='white'>55°</Text>
                     </Flex>
                   </CardBody>
                 </Card>
@@ -226,114 +226,114 @@ function App() {
                 spacing={4}  // Space between each card
                 px={2}  // Padding inside the HStack
               >
-                 <Card width='122px' height='140px' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                 <Card width='122px' height='140px' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
                   <CardHeader>
-                    <Heading size='md'>Today</Heading>
+                    <Heading color='white' size='md'>Today</Heading>
                   </CardHeader>
                   <CardBody mt='-30px'>
                     <Flex justifyContent='center'>
                     <Image src='/images/sun_icon.png' width='50px'></Image>
                     </Flex>
-                    <Text>Sunny 60°</Text>
+                    <Text color='white'>Sunny 60°</Text>
                   </CardBody>
                 </Card>
-                <Card width='122px' height='140px' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                <Card width='122px' height='140px' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
                   <CardHeader>
-                    <Heading size='md'>Fri 06</Heading>
+                    <Heading color='white' size='md'>Fri 06</Heading>
                   </CardHeader>
                   <CardBody mt='-30px'>
                     <Flex justifyContent='center'>
                     <Image src='/images/sun_icon.png' width='50px'></Image>
                     </Flex>
-                    <Text>Sunny 65°</Text>
+                    <Text color='white'>Sunny 65°</Text>
                   </CardBody>
                 </Card>
-                <Card width='122px' height='140px' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                <Card width='122px' height='140px' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
                   <CardHeader>
-                    <Heading size='md'>Sat 07</Heading>
+                    <Heading color='white' size='md'>Sat 07</Heading>
                   </CardHeader>
                   <CardBody mt='-30px'>
                     <Flex justifyContent='center'>
-                    <Image src='/images/white_cloud_img.png' width='50px'></Image>
+                      <Icon as={FaCloud} w={50} h={50} color='white'/>
                     </Flex>
-                    <Text>Cloudy 62°</Text>
+                    <Text color='white'>Cloudy 62°</Text>
                   </CardBody>
                 </Card>
-                <Card width='122px' height='140px' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                <Card width='122px' height='140px' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
                   <CardHeader>
-                    <Heading size='md'>Sun 08</Heading>
+                    <Heading color='white' size='md'>Sun 08</Heading>
                   </CardHeader>
                   <CardBody mt='-30px'>
                     <Flex justifyContent='center'>
-                    <Image src='/images/sun_icon.png' width='50px'></Image>
+                      <Image src='/images/sun_icon.png' width='50px'></Image>
                     </Flex>
-                    <Text>Sunny 64°</Text>
+                    <Text color='white'>Sunny 64°</Text>
                   </CardBody>
                 </Card>
-                <Card width='122px' height='140px' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                <Card width='122px' height='140px' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
                   <CardHeader>
-                    <Heading size='md'>Mon 09</Heading>
-                  </CardHeader>
-                  <CardBody mt='-30px'>
-                    <Flex justifyContent='center'>
-                    <Image src='/images/sun_icon.png' width='50px'></Image>
-                    </Flex>
-                    <Text>Sunny 60°</Text>
-                  </CardBody>
-                </Card>
-                <Card width='122px' height='140px' flexShrink='0' backgroundColor='whiteAlpha.800'>
-                  <CardHeader>
-                    <Heading size='md'>Tues 10</Heading>
-                  </CardHeader>
-                  <CardBody mt='-30px'>
-                    <Flex justifyContent='center'>
-                    <Image src='/images/white_cloud_img.png' width='50px'></Image>
-                    </Flex>
-                    <Text>Cloudy 54°</Text>
-                  </CardBody>
-                </Card>
-                <Card width='122px' height='140px' flexShrink='0' backgroundColor='whiteAlpha.800'>
-                  <CardHeader>
-                    <Heading size='md'>Wed 11</Heading>
-                  </CardHeader>
-                  <CardBody mt='-30px'>
-                    <Flex justifyContent='center'>
-                    <Image src='/images/white_cloud_img.png' width='50px'></Image>
-                    </Flex>
-                    <Text>Cloudy 54°</Text>
-                  </CardBody>
-                </Card>
-                <Card width='122px' height='140px' flexShrink='0' backgroundColor='whiteAlpha.800'>
-                  <CardHeader>
-                    <Heading size='md'>Thu 12</Heading>
-                  </CardHeader>
-                  <CardBody mt='-30px'>
-                    <Flex justifyContent='center'>
-                    <Image src='/images/white_cloud_img.png' width='50px'></Image>
-                    </Flex>
-                    <Text>Cloudy 60°</Text>
-                  </CardBody>
-                </Card>
-                <Card width='122px' height='140px' flexShrink='0' backgroundColor='whiteAlpha.800'>
-                  <CardHeader>
-                    <Heading size='md'>Fri 13</Heading>
+                    <Heading color='white' size='md'>Mon 09</Heading>
                   </CardHeader>
                   <CardBody mt='-30px'>
                     <Flex justifyContent='center'>
                     <Image src='/images/sun_icon.png' width='50px'></Image>
                     </Flex>
-                    <Text>Sunny 60°</Text>
+                    <Text color='white'>Sunny 60°</Text>
                   </CardBody>
                 </Card>
-                <Card width='122px' height='140px' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                <Card width='122px' height='140px' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
                   <CardHeader>
-                    <Heading size='md'>Sat 14</Heading>
+                    <Heading color='white' size='md'>Tues 10</Heading>
+                  </CardHeader>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Icon as={FaCloud} w={50} h={50} color='white'/>
+                    </Flex>
+                    <Text color='white'>Cloudy 54°</Text>
+                  </CardBody>
+                </Card>
+                <Card width='122px' height='140px' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
+                  <CardHeader>
+                    <Heading color='white' size='md'>Wed 11</Heading>
+                  </CardHeader>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Icon as={FaCloud} w={50} h={50} color='white'/>
+                    </Flex>
+                    <Text color='white'>Cloudy 54°</Text>
+                  </CardBody>
+                </Card>
+                <Card width='122px' height='140px' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
+                  <CardHeader>
+                    <Heading color='white' size='md'>Thu 12</Heading>
+                  </CardHeader>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Icon as={FaCloud} w={50} h={50} color='white'/>
+                    </Flex>
+                    <Text color='white'>Cloudy 60°</Text>
+                  </CardBody>
+                </Card>
+                <Card width='122px' height='140px' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
+                  <CardHeader>
+                    <Heading color='white' size='md'>Fri 13</Heading>
                   </CardHeader>
                   <CardBody mt='-30px'>
                     <Flex justifyContent='center'>
                     <Image src='/images/sun_icon.png' width='50px'></Image>
                     </Flex>
-                    <Text>Sunny 60°</Text>
+                    <Text color='white'>Sunny 60°</Text>
+                  </CardBody>
+                </Card>
+                <Card width='122px' height='140px' flexShrink='0' backgroundColor='rgba(56, 51, 148, 0.7)'>
+                  <CardHeader>
+                    <Heading color='white' size='md'>Sat 14</Heading>
+                  </CardHeader>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                    <Image src='/images/sun_icon.png' width='50px'></Image>
+                    </Flex>
+                    <Text color='white'>Sunny 60°</Text>
                   </CardBody>
                 </Card>
               </HStack>
@@ -354,7 +354,7 @@ function App() {
               <Card
                 direction={{ base: 'column', sm: 'row' }}
                 overflow='hidden'
-                variant='outline'
+                backgroundColor='rgba(56, 51, 148, 0.7)'
               >
                 <Image
                   objectFit='cover'
@@ -364,9 +364,9 @@ function App() {
                 />
                 <Stack>
                   <CardBody>
-                    <Heading size='md'>8 MPH</Heading>
+                    <Heading color='white' size='md'>8 MPH</Heading>
 
-                    <Text py='2'>
+                    <Text color='white' py='2'>
                       Wind is blowing NorthWest 8 MPH, with 19 MPH gusts.
                     </Text>
                   </CardBody>
@@ -389,7 +389,7 @@ function App() {
               <Card
                 direction={{ base: 'column', sm: 'row' }}
                 overflow='hidden'
-                variant='outline'
+                backgroundColor='rgba(56, 51, 148, 0.7)'
               >
                 <Image
                   objectFit='cover'
@@ -399,9 +399,9 @@ function App() {
                 />
                 <Stack>
                   <CardBody>
-                    <Heading size='md'>15 Good</Heading>
+                    <Heading color='white' size='md'>15 Good</Heading>
 
-                    <Text py='2'>
+                    <Text color='white' py='2'>
                       The air quality index is 15 right now, similar to yesterday's air quality at this time 
                     </Text>
                   </CardBody>

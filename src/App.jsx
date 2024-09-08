@@ -6,7 +6,7 @@ import { Text, Container, VStack, Box, SimpleGrid, Button } from '@chakra-ui/rea
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import { Icon } from '@chakra-ui/react'
 import { TimeIcon, CalendarIcon } from '@chakra-ui/icons'
-import { FaWind } from "react-icons/fa";
+import { FaWind, FaCloud } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
 
 import './App.css'
@@ -45,15 +45,27 @@ function App() {
           spacing={4}
           px={4}  // Padding inside the VStack for better spacing
         >
-          <Heading mt='50px' fontSize='xl' fontWeight='normal' color='white' fontFamily='Playfair Display, sans-serif'>
-            PHILADELPHIA
-          </Heading>
-          <Text fontWeight='hairline' fontSize='8xl' color='white' mt='-8'>
-            61°
-          </Text>
-          <Text fontWeight='normal' fontSize='xl' color='white' mt='-8'>
-            L: 58° H: 64°
-          </Text>
+          <Container mt='10px' as='section' maxWidth='4xl' justify='center'>
+            <HStack spacing={2} alignItems="center">
+              <Container>
+                <Heading mt='50px' fontSize='xl' fontWeight='normal' color='white' fontFamily='Playfair Display, sans-serif'>
+                  PHILADELPHIA
+                </Heading>
+                <Text fontWeight='hairline' fontSize='8xl' color='white' mt='-8'>
+                  61°
+                </Text>
+                <Text fontWeight='normal' fontSize='xl' color='white' mt='-8'>
+                  L: 58° H: 64°
+                </Text>
+              </Container>
+              <Container mt='50px'>
+                <Icon as={FaCloud} w={110} h={110} color='white' />
+                <Text mt='-12px' fontWeight='normal' fontSize='lg' color='white'>
+                  Partly Cloudy
+                </Text>
+              </Container>
+            </HStack>
+          </Container>
 
           {/* Hourly Forecast */}
           <Container mt='10px' as='section' maxWidth='4xl' justify='center'>
@@ -82,7 +94,7 @@ function App() {
                 <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
                   <Flex justifyContent='center'>
                     <CardHeader>
-                      <Heading size='md'>6 pm</Heading>
+                      <Heading size='sm'>6 pm</Heading>
                     </CardHeader>
                   </Flex>
                   <CardBody mt='-30px'>
@@ -99,7 +111,7 @@ function App() {
                 <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
                   <Flex justifyContent='center'>
                     <CardHeader>
-                      <Heading size='md'>7 pm</Heading>
+                      <Heading size='sm'>7 pm</Heading>
                     </CardHeader>
                   </Flex>
                   <CardBody mt='-30px'>
@@ -115,12 +127,12 @@ function App() {
                 <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
                   <Flex justifyContent='center'>
                     <CardHeader>
-                      <Heading size='md'>8 pm</Heading>
+                      <Heading size='sm'>8 pm</Heading>
                     </CardHeader>
                   </Flex>
                   <CardBody mt='-30px'>
                     <Flex justifyContent='center'>
-                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                      <Image src='/images/white_cloud_img.png' width='50px'></Image>
                     </Flex>
                     <Flex justifyContent='center'>
                       <Text>58°</Text>
@@ -131,15 +143,15 @@ function App() {
                 <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
                   <Flex justifyContent='center'>
                     <CardHeader>
-                      <Heading size='md'>8 pm</Heading>
+                      <Heading size='sm'>9 pm</Heading>
                     </CardHeader>
                   </Flex>
                   <CardBody mt='-30px'>
                     <Flex justifyContent='center'>
-                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                      <Image src='/images/white_cloud_img.png' width='50px'></Image>
                     </Flex>
                     <Flex justifyContent='center'>
-                      <Text>58°</Text>
+                      <Text>55°</Text>
                     </Flex>
                   </CardBody>
                 </Card>
@@ -147,15 +159,45 @@ function App() {
                 <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
                   <Flex justifyContent='center'>
                     <CardHeader>
-                      <Heading size='md'>8 pm</Heading>
+                      <Heading size='sm'>10 pm</Heading>
                     </CardHeader>
                   </Flex>
                   <CardBody mt='-30px'>
                     <Flex justifyContent='center'>
-                      <Image src='/images/sun_icon.png' width='50px'></Image>
+                      <Image src='/images/white_cloud_img.png' width='50px'></Image>
                     </Flex>
                     <Flex justifyContent='center'>
-                      <Text>58°</Text>
+                      <Text>53°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                  <Flex justifyContent='center'>
+                    <CardHeader>
+                      <Heading size='sm'>11 pm</Heading>
+                    </CardHeader>
+                  </Flex>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/white_cloud_img.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>55°</Text>
+                    </Flex>
+                  </CardBody>
+                </Card>
+                <Card width='90px' height='140px' borderRadius='xl' flexShrink='0' backgroundColor='whiteAlpha.800'>
+                  <Flex justifyContent='center'>
+                    <CardHeader>
+                      <Heading size='sm'>12 am</Heading>
+                    </CardHeader>
+                  </Flex>
+                  <CardBody mt='-30px'>
+                    <Flex justifyContent='center'>
+                      <Image src='/images/white_cloud_img.png' width='50px'></Image>
+                    </Flex>
+                    <Flex justifyContent='center'>
+                      <Text>55°</Text>
                     </Flex>
                   </CardBody>
                 </Card>
@@ -307,7 +349,7 @@ function App() {
             </HStack>
           </Container>
 
-          <Container mb='40px' as='section' maxWidth='4xl' justify='center'>
+          <Container as='section' maxWidth='4xl' justify='center'>
             <Box px={4} width='330px' height='150px'>
               <Card
                 direction={{ base: 'column', sm: 'row' }}

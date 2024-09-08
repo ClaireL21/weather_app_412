@@ -1,3 +1,10 @@
+# Resources Used
+
+- [Stack Overflow - Creating a horizontally scrolling View](https://stackoverflow.com/questions/75110846/i-want-to-create-a-view-that-scrolls-horizontally-chakraui) 
+- [React Icons](https://react-icons.github.io/react-icons/)
+- ChatGPT was used to help develop card elements and improve layout of elements and overall phone shape
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
